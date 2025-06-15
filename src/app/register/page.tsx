@@ -69,7 +69,7 @@ export default function RegisterPage() {
         <Card className="w-full max-w-md shadow-xl">
           <CardHeader className="text-center">
             <CardTitle className="text-3xl font-headline text-primary">Create an Account</CardTitle>
-            <CardDescription>Join Velocity to find your perfect ride.</CardDescription>
+            <CardDescription>Join Vehicle-Rental-APP to find your perfect ride.</CardDescription>
           </CardHeader>
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)}>

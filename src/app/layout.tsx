@@ -4,8 +4,8 @@ import { Toaster } from "@/components/ui/toaster";
 import AppProviders from '@/components/AppProviders';
 
 export const metadata: Metadata = {
-  title: 'Velocity - Vehicle Rentals',
-  description: 'Rent a wide variety of vehicles with Velocity.',
+  title: 'Vehicle-Rental-APP - Vehicle Rentals',
+  description: 'Rent a wide variety of vehicles with Vehicle-Rental-APP.',
 };
 
 export default function RootLayout({

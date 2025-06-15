@@ -7,7 +7,7 @@ describe('Footer Component', () => {
   it('renders the copyright text', () => {
     render(<Footer />);
     const currentYear = new Date().getFullYear();
-    const copyrightText = screen.getByText(`© ${currentYear} Velocity Vehicle Rentals. All rights reserved.`);
+    const copyrightText = screen.getByText(`© ${currentYear} Vehicle-Rental-APP Vehicle Rentals. All rights reserved.`);
     expect(copyrightText).toBeInTheDocument();
   });
 

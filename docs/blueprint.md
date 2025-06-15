@@ -1,4 +1,4 @@
-# **App Name**: Velocity
+# **App Name**: Vehicle-Rental-APP
 
 ## Core Features:
 

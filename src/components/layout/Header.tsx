@@ -39,7 +39,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 text-primary hover:opacity-80 transition-opacity">
           <Car className="h-8 w-8" />
-          <span className="font-headline text-3xl font-bold">Velocity</span>
+          <span className="font-headline text-3xl font-bold">Vehicle-Rental-APP</span>
         </Link>
         <nav>
           <ul className="flex items-center space-x-4 md:space-x-6">

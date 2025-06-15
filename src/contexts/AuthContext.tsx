@@ -19,7 +19,7 @@ interface AuthContextType {
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
-const LOCAL_STORAGE_USER_KEY = 'velocityUser';
+const LOCAL_STORAGE_USER_KEY = 'user';
 
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
