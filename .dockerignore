@@ -1,0 +1,38 @@
+
+# Git files
+.git
+.gitignore
+
+# Docker files
+Dockerfile
+.dockerignore
+
+# Node modules
+node_modules
+
+# Next.js build output (will be handled by multi-stage build)
+.next
+
+# Local environment variables
+.env
+.env*.local
+
+# SQLite database file (should be managed with volumes in production)
+*.sqlite
+*.sqlite-journal
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE and editor specific files
+.vscode
+*.swp
+*~
