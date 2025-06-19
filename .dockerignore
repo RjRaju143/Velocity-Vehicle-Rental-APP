@@ -18,8 +18,10 @@ node_modules
 .env*.local
 
 # SQLite database file (should be managed with volumes in production)
-*.sqlite
+# *.sqlite - commented out to allow velocity.sqlite to be copied
 *.sqlite-journal
+# Allow specific SQLite files needed for the app
+!velocity.sqlite
 
 # Operating System files
 .DS_Store

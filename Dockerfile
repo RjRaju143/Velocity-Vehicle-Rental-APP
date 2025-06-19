@@ -9,7 +9,7 @@ COPY package.json package-lock.json ./
 # If issues arise, consider: RUN npm install --legacy-peer-deps
 RUN npm install
 
-# Copy application code
+# Copy application code (velocity.sqlite is included in this copy)
 COPY . .
 
 # Set production environment for build
@@ -45,11 +45,6 @@ COPY --from=builder --chown=nextjs:nodejs /app/velocity.sqlite ./velocity.sqlite
 
 # Set the user to the non-root user
 USER nextjs
-
-ENV NODE_ENV production
-ENV NEXT_TELEMETRY_DISABLED 1
-ENV PORT 3000
-ENV GOOGLE_API_KEY ${GOOGLE_API_KEY}
 
 EXPOSE 3000
 
