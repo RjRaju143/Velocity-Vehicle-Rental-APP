@@ -22,10 +22,13 @@ RUN npm run build
 FROM node:20-alpine AS runner
 WORKDIR /app
 
+# Accept build argument for Google API Key
+ARG GOOGLE_API_KEY
+
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
 ENV PORT 3000
-ENV GOOGLE_API_KEY ${GOOGLE_API_KEY}
+ENV GOOGLE_API_KEY=${GOOGLE_API_KEY}
 
 # Create a non-root user and group for security
 RUN addgroup --system --gid 1001 nodejs
