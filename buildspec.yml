@@ -28,7 +28,7 @@ phases:
       - echo $DOCKER_CONTAINER_NAME
       - echo printing imagedefinitions.json
       - cat imagedefinitions.json
-# artifacts:
-#   files:
-#     - imagedefinitions.json
-#     - target/springboot-aws-deploy.jar
+artifacts:
+  files:
+    - imagedefinitions.json
+    # - target/springboot-aws-deploy.jar
