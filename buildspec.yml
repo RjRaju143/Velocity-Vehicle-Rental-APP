@@ -26,9 +26,11 @@ phases:
       - DOCKER_CONTAINER_NAME=velocity-prod
       - printf '[{"name":"%s","imageUri":"%s"}]' $DOCKER_CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - echo $DOCKER_CONTAINER_NAME
+      - echo Zipping source code...
+      - zip -r velocity-prod.zip . -x "*.git*" "node_modules/*" "velocity-prod.zip"      
       - echo printing imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
   files:
     - imagedefinitions.json
-    # - target/springboot-aws-deploy.jar
+    - velocity-prod.zip
